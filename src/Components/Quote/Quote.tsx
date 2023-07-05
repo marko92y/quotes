@@ -12,6 +12,7 @@ const Quote: FC<QuoteProps> = ({ quote }) => {
   return (
     <div className={styles.container}>
       <Votes
+        quoteId={quote.id}
         upvotesCount={quote.upvotesCount}
         downvotesCount={quote.downvotesCount}
         givenVote={quote.givenVote}

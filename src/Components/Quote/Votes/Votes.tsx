@@ -51,7 +51,7 @@ const Votes: FC<VotesProps> = ({
       </button>
       <div className={styles.scoreContainer}>
         <p style={{ color: color }}>
-          {countPrecentage ? countPrecentage : 50}%
+          {countPrecentage ? countPrecentage : "0"}%
         </p>
         <div>
           {upvotesCount}/{downvotesCount}

@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    .scoreContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        p {
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+    }
+    button {
+        border: none;
+        background-color: transparent;
+            svg{
+                color:rgba(255, 255, 255, 0.338);
+            }
+        
+    }
+}

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    width:80vw;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    .quoteContainer {
+        position: relative;        
+        background-color: white;
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+        padding: 15px 15px 60px;
+        margin:0px 0px 0px 30px;
+        @media only screen and (min-width: 768px) {
+            width:600px;
+          }
+    
+        .quote{
+            color:rgb(16, 16, 16);
+            font-size: 18px;
+            width: 100%;
+        }    
+    
+        .author{
+            color: rgb(164, 164, 164);
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+}

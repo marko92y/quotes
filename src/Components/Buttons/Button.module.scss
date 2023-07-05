@@ -1,0 +1,14 @@
+@import 'Styling/index.scss';
+
+.button {
+    cursor: pointer;
+    color: black;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 40px;
+    padding: 25px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    max-width: 150px;
+}

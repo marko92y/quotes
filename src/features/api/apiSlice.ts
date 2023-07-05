@@ -39,18 +39,18 @@ export const apiSlice = createApi({
               }),
             invalidatesTags: ['Quotes']
         }),
-        // addQuote: builder.mutation<QuotesResponse, void>({
-        //     query:(quote)=> ({
-        //         url:'quotes',
-        //         method: 'Post',
-        //         body: quote
-        //     }),
-        //     invalidatesTags: ['Quotes']
-        // })
+        addQuote: builder.mutation<QuotesResponse, any>({
+            query:(quote)=> ({
+                url:'quotes',
+                method: 'Post',
+                body: quote
+            }),
+            invalidatesTags: ['Quotes']
+        })
         
     })
 })
 
 export const {
-    useGetQuotesQuery, useUpvoteQuoteMutation,useUpvoteQuoteDeleteMutation, useDownvoteQuoteMutation, useDownvoteQuoteDeleteMutation
+    useGetQuotesQuery, useUpvoteQuoteMutation,useUpvoteQuoteDeleteMutation, useDownvoteQuoteMutation, useDownvoteQuoteDeleteMutation ,useAddQuoteMutation
 } = apiSlice

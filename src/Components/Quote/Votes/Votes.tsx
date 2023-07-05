@@ -47,10 +47,12 @@ const Votes: FC<VotesProps> = ({
           }
         }}
       >
-        <FontAwesomeIcon onClick={() => console.log("sss")} icon={faCaretUp} />
+        <FontAwesomeIcon icon={faCaretUp} />
       </button>
       <div className={styles.scoreContainer}>
-        <p style={{ color: color }}>{countPrecentage}</p>
+        <p style={{ color: color }}>
+          {countPrecentage ? countPrecentage : 50}%
+        </p>
         <div>
           {upvotesCount}/{downvotesCount}
         </div>

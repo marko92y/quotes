@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 20px;
+
+    label {
+    padding: 5px 50px;
+    }
+    input {
+        padding: 30px;
+        background-color: rgb(240, 240, 240);
+        border: 2px solid rgb(240, 240, 240);
+        margin:10px 30px;
+        border-radius: 8px;
+        &:focus {
+            outline: none;
+        }
+    }  
+}
+.inputError {
+    border: 2px solid red !important;
+   
+    &:focus {
+        outline: none;
+      }
+}
+
+.errorText {
+    bottom: -15px;
+    position: absolute;
+    padding: 5px 75px;
+    color: red;
+}

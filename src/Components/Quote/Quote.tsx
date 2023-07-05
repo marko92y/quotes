@@ -8,7 +8,6 @@ interface QuoteProps {
 }
 
 const Quote: FC<QuoteProps> = ({ quote }) => {
-  console.log(quote);
   return (
     <div className={styles.container}>
       <Votes

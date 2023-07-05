@@ -22,7 +22,6 @@ export const Modal: FC<ModalProps> = ({ isOpen, setOpenModal }) => {
     },
     validationSchema: Validation,
     onSubmit: (values) => {
-      console.log(formik.values);
       addQuoteMutation({
         ...formik.values,
         tags: formik.values.tags.split(",").map((e) => e.trim()) || [

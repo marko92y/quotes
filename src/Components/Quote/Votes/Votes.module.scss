@@ -1,3 +1,5 @@
+@import 'Styling/index.scss';
+
 .container{
     display: flex;
     flex-direction: column;
@@ -14,6 +16,7 @@
         }
     }
     button {
+        cursor: pointer;
         border: none;
         background-color: transparent;
             svg{
@@ -21,4 +24,13 @@
             }
         
     }
+
+    .buttonActive {       
+        svg{
+            color:white
+        }            
+
+}
+
+    
 }

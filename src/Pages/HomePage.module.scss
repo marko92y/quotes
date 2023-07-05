@@ -1,7 +1,10 @@
+@import 'Styling/index.scss';
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
     .title {
         font-size: 42px;
         color: white;
